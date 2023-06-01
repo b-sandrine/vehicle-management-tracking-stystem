@@ -1,0 +1,9 @@
+.vehicle--container {
+    width: 85%;
+    background-color: red;
+    position: absolute;
+    height: 600px;
+    top: 100px;
+    left: 220px;
+    /* right: 0; */
+}
