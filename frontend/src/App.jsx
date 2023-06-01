@@ -9,8 +9,8 @@ import Vehicles from './Utils/Vehicles/Vehicle'
 function App() {
  return(
     <Routes>
-      <Route path='register' component={Signup}></Route>
-      <Route path='login' component={Login}></Route>
+      <Route path='register' element={<Signup/>}></Route>
+      <Route path='login' element={<Login/>}></Route>
       <Route path='owners' element={<Dashboard childComponent={<CarOwner />}/>}  />
       <Route path='vehicles' element={<Dashboard childComponent={<Vehicles />}/>} />
     </Routes>
