@@ -1,0 +1,16 @@
+.sidebar--container {
+    height: 642px;
+    width: 200px;
+    background-color: #55A8DA;
+}
+ 
+.sidebar--container .sidebar--item {
+    width: 80%;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    flex-direction: row;
+    color: white;
+    font-weight: bolder;
+}
