@@ -1,0 +1,7 @@
+.carowner--container {
+    width: 70%;
+    background-color: red;
+    position: absolute;
+    height: 600px;
+    right: 0;
+}
