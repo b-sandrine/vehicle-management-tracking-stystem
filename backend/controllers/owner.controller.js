@@ -1,6 +1,6 @@
 const Owners = require('../models/owner.model')
 
-export default async function createOwners(req,res) {
+exports.createOwners = async(req,res) => {
     try {
         const results = await Owners.create(req.body)
         if(results) {
@@ -12,7 +12,7 @@ export default async function createOwners(req,res) {
     }
 }
 
-export default async function getAllOwnerss(req,res) {
+exports.getAllOwners = async(req,res) => {
     try {
         const results = await Owners.find();
         if(results) {

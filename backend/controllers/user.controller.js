@@ -1,6 +1,6 @@
 const User = require('../models/user.model')
 
-export default async function createUser(req,res) {
+exports.createUser = async(req,res) => {
     try {
         const results = await User.create(req.body)
         if(results) {
@@ -12,7 +12,7 @@ export default async function createUser(req,res) {
     }
 }
 
-export default async function getAllUsers(req,res) {
+exports.getAllUsers = async(req,res) => {
     try {
         const results = await User.find();
         if(results) {

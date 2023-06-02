@@ -1,6 +1,6 @@
 const Vehicles = require('../models/vehicle.model')
 
-export default async function createVehicles(req,res) {
+exports.createVehicles  = async(req,res) => {
     try {
         const results = await Vehicles.create(req.body)
         if(results) {
@@ -12,7 +12,7 @@ export default async function createVehicles(req,res) {
     }
 }
 
-export default async function getAllVehicless(req,res) {
+exports.getAllVehicles = async(req,res) => {
     try {
         const results = await Vehicles.find();
         if(results) {
